@@ -2,17 +2,15 @@ import { Navigate, BrowserRouter, Route, Routes,} from "react-router-dom";
 import HeaderComputo from "./cristhian/HeaderComputo";
 //import Home from "./pages/Home/home";
 import { catnew } from "./cristhian/apinew";
-import Carrucel from "./Carrucel.jsx";
+
 import { useState } from "react";
 import Login from "./Christofer/Login";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import appFirebase from "./credenciales";
 const auth = getAuth(appFirebase);
-import ModoDarck from "./cesar/ModoDarck.jsx";
-import Gamer from "./cristhian/Gamer.jsx";
+
 import GaleriaGamer from "./pages/Home/GaleriaGamer.jsx";
-import ZonaTeclados from "./cesar/Saltos/ZonaTeclados.jsx";
-import ZonaMicrofonos from "./cesar/Saltos/ZonaMicrofonos.jsx";
+
 import ZonaAudifonosGamer from "./cesar/Saltos/ZonaAudifonosGamer.jsx";
 import ZonaLaptops from "./cesar/Saltos/ZonaLaptops.jsx";
 import ZonaCargadores from "./cesar/Saltos/ZonaCargadores.jsx";
@@ -22,7 +20,7 @@ import CarrucelZonaTeclado from "./cesar/zonaCarruceles/CarrucelZonaTeclado.jsx"
 import Especificaciones from "./cristhian/Especificaciones.jsx";
 import Ide2 from "./cristhian/Id2.jsx";
 import CarrucelZonaMicrofonos from "./cesar/zonaCarruceles/CarrucelZonaMicrofonos.jsx";
-import CarrucelZonaAudifonosGamer from "./cesar/zonaCarruceles/CarrucelZonaAudifonosGamer.jsx";
+
 import CarrucelZonaLaptops from "./cesar/zonaCarruceles/CarrucelZonaLaptops.jsx";
 import CarrucelzonaCargadores from "./cesar/zonaCarruceles/CarrucelzonaCargadores.jsx";
 import CarrucelZonaPcGamer from "./cesar/zonaCarruceles/CarrucelZonaPcGamer.jsx";
@@ -60,10 +58,10 @@ const App = () => {
           <Route path= "/zonagamer" element={<GaleriaGamer/>} />
           <Route path= "/zonaTeclados" element={<CarrucelZonaTeclado/>} />
           <Route path= "/zonaMicrofonos" element={<CarrucelZonaMicrofonos/>} />
-          <Route path= "/zonaAudifonosGamer" element={<CarrucelZonaAudifonosGamer/>} />
+          <Route path= "/zonaAudifonosGamer" element={<ZonaAudifonosGamer/>} />
           <Route path= "/zonaLaptops" element={<CarrucelZonaLaptops/>} />
           <Route path= "/zonCargadores" element={<ZonaCargadores/>} />
-          <Route path= "/zonaLaptops" element={<ZonaPcGamer/>} />
+          <Route path= "/zonaLaptops" element={<ZonaLaptops/>} />
           <Route path= "/ZonaCargadores" element={<ZonaCargadores/>} />
           <Route path= "/ZonaPcGamer" element={<ZonaPcGamer/>} />
           <Route path= "/zonaMonitores" element={<ZonaMonitores/>} />
