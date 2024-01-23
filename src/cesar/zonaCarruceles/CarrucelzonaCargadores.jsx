@@ -1,7 +1,7 @@
 import React from 'react'
 import ImageGallery from 'react-image-gallery'
 
-import ZonaCargadores from '../Saltos/ZonaCargadores'
+
 
 const CarrucelzonaCargadores = () => {
   const images = [
@@ -36,7 +36,7 @@ const CarrucelzonaCargadores = () => {
   
         //duracion al pasar de una imagen a otra
         slideDuration={1000} />
-     <ZonaCargadores/>
+     
 
     </div>
   )
