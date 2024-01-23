@@ -1,6 +1,6 @@
 import { Navigate, BrowserRouter, Route, Routes,} from "react-router-dom";
 import HeaderComputo from "./cristhian/HeaderComputo";
-import Home from "./pages/Home/home";
+//import Home from "./pages/Home/home";
 import { catnew } from "./cristhian/apinew";
 import Carrucel from "./Carrucel.jsx";
 import { useState } from "react";
@@ -51,10 +51,10 @@ const App = () => {
 
         <Routes>
           
-          <Route path="/" element={<Home filteredApiNew={filteredApiNew} />} />
+          
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<Navigate to="/" replace />} />
-          <Route path= "/zonagamer" element={<GaleriaGamer/>} />
+          <Route path= "/" element={<GaleriaGamer/>} />
           <Route path= "/zonaTeclados" element={<CarrucelZonaTeclado/>} />
           <Route path= "/zonaMicrofonos" element={<CarrucelZonaMicrofonos/>} />
           <Route path= "/zonaAudifonosGamer" element={<CarrucelZonaAudifonosGamer/>} />
